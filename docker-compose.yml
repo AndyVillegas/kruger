@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  kruger.api:
+    image: ${DOCKER_REGISTRY-}krugerapi
+    build:
+      context: .
+      dockerfile: src/Kruger.API/Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=${CONNECTION_STRING}
+    ports:
+      - "5000:80"
+  kruger.db:
+    image: mcr.microsoft.com/mssql/server:2019-CU15-ubuntu-20.04
+    command: /bin/bash ./entrypoint.sh
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SA_PASSWORD}
+      - MSSQL_PID=Express
+    ports:
+      - "1434:1433"
+    volumes:
+      - kruger.db:/var/opt/mssql
+      - ./scripts/init.sql:/init.sql
+      - ./scripts/setup_database.sh:/setup_database.sh
+      - ./scripts/entrypoint.sh:/entrypoint.sh
+
+volumes:
+  kruger.db:
+    driver: local
+    name: kruger.db
