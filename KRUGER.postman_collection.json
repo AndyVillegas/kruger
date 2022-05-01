@@ -1,0 +1,613 @@
+{
+	"info": {
+		"_postman_id": "d4d8459e-92a7-4da2-8041-c867066302fb",
+		"name": "KRUGER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "Get cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Cars",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get car",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Cars/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove car",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Cars/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Cars",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"plate\": \"ABC223\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Cars",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"plate\": \"ZZZ121\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Cars/1008",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Cars",
+								"1008"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rates",
+			"item": [
+				{
+					"name": "Get Rates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Rates",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Rates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Rates/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Rates",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Rate",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/Rates/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Rates",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Rate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"B\",\r\n    \"hourlyCost\": 6.50,\r\n    \"minimumCost\": 5.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Rates",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Rates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Rate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"B edited\",\r\n    \"hourlyCost\": 6.50,\r\n    \"minimumCost\": 5.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/Rates/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"Rates",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parking Places",
+			"item": [
+				{
+					"name": "Get Parking Places",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ParkingPlaces",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingPlaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Parking Place",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ParkingPlaces/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingPlaces",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Parking Place",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ParkingPlaces/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingPlaces",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Parking Place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Place #2\",\r\n    \"capacity\": 3,\r\n    \"rateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/ParkingPlaces",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingPlaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Parking Place",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Place #2 edited\",\r\n    \"capacity\": 3,\r\n    \"rateId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/ParkingPlaces/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingPlaces",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car Owners",
+			"item": [
+				{
+					"name": "Get Car Owners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/CarOwners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"CarOwners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car Owner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/CarOwners/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"CarOwners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Car Owner",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/CarOwners/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"CarOwners",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Car Owner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Emma\",\r\n    \"lastName\": \"Matamoros\",\r\n    \"idType\": 0,\r\n    \"idValue\": \"0940864749\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/CarOwners",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"CarOwners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Car Owner",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Emma\",\r\n    \"lastName\": \"Matamoros\",\r\n    \"idType\": 0,\r\n    \"idValue\": \"0940864722\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/CarOwners/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"CarOwners",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parking Records",
+			"item": [
+				{
+					"name": "Get records",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ParkingRecords",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingRecords"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"carOwnerId\": 1,\r\n    \"parkingPlaceId\": 1,\r\n    \"carId\": 1008\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/ParkingRecords",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingRecords"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finish record",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"note\": \"Se finalizó con éxito el parqueo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/ParkingRecords/1005/finish",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingRecords",
+								"1005",
+								"finish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get record",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/ParkingRecords/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"ParkingRecords",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:60249",
+			"type": "string"
+		}
+	]
+}
