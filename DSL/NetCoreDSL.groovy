@@ -12,6 +12,7 @@ job('Application in .Net Core') {
   steps {
     dotnetPublish {
       sdk('Net 5.0')
+      configuration('Release')
       project('src/Kruger.API/Kruger.API.csproj')
     }
   }
