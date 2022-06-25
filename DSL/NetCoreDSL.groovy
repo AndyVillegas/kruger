@@ -12,7 +12,7 @@ job('Application in .Net Core') {
   steps {
     dotnetBuild {
       sdk('Net 5.0')
-      project('src/Kruger.Application/Kruger.Application.csproj')
+      project('src/Kruger.API/Kruger.API.csproj')
     }
   }
 }
