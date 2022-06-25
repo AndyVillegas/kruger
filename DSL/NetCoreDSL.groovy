@@ -9,4 +9,9 @@ job('Application in .Net Core') {
   triggers {
     scm('H/7 * * * *')
   }
+  steps {
+    dotnetBuild {
+      project('src/Kruger.Application/Kruger.Application.csproj')
+    }
+  }
 }
