@@ -10,7 +10,7 @@ job('Application in .Net Core') {
     scm('H/7 * * * *')
   }
   steps {
-    dotnetBuild {
+    dotnetPublish {
       sdk('Net 5.0')
       project('src/Kruger.API/Kruger.API.csproj')
     }
